@@ -1,5 +1,5 @@
 result = ''
-file = open('lorem.txt', 'r')
+file = open('two_cities_ascii.txt', 'r')
 data = file.readlines()[0]
 #take 1 character from the string at the time
 for i in data:
