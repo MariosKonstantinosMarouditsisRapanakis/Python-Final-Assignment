@@ -8,7 +8,7 @@ seed=int(tmp,16)
 
 random.seed(seed)
 
-lst=list(range(1,13))
+lst=list(range(1,14))
 
 random.shuffle(lst)
 
