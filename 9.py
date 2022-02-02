@@ -1,6 +1,6 @@
 result = ''
 file = open('two_cities_ascii.txt', 'r')
-data = file.readlines()[0]
+data = ''.join(file.readlines())
 #take 1 character from the string at the time
 for i in data:
     #convert to binary and remove 0b
