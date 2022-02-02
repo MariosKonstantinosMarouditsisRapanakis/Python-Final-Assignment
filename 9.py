@@ -1,6 +1,13 @@
-result = ''
-file = open('two_cities_ascii.txt', 'r')
+import sys
+#checking for file input through the cmd
+filename = ''
+filename = sys.argv[1] if len(sys.argv) > 1 else 'two_cities_ascii.txt'
+#getting data from the file
+file = open(filename, 'r')
 data = ''.join(file.readlines())
+file.close()
+
+result = ''
 #take 1 character from the string at the time
 for i in data:
     #convert to binary and remove 0b
