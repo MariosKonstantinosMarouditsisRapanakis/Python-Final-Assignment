@@ -16,8 +16,10 @@ for i in data:
     binaryCharacter = '0'*( 7 - len(binaryCharacter) ) + binaryCharacter
     #get 2 first and 2 last digits
     result += binaryCharacter[:2] + binaryCharacter[-2:]
+#split them to 16bits and put them in a list (discarding the remaining less than 16 bits)
 resultList = [ result[16*j:(j+1)*16] for j in range(int(len(result)/16)) ]
 #initiating count variables
+# even and divisable by 5 are calculated together since in binary numbers can only end in 1 or 0, when ending in 1 they are not divisable by 5 or 2, and when they end in 0 they are.
 count2or5 = 0
 count3 = 0
 count7 = 0

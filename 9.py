@@ -1,5 +1,5 @@
 import sys
-#checking for file input through the cmd
+#checking for file input through the terminal
 filename = ''
 filename = sys.argv[1] if len(sys.argv) > 1 else 'two_cities_ascii.txt'
 #getting data from the file
@@ -15,6 +15,7 @@ for i in data:
     #add 0s in the front to make it a 7bit
     binaryCharacter = '0'*( 7 - len(binaryCharacter) ) + binaryCharacter
     result += binaryCharacter
+#print because I can't understand if you want us to print it or not......
 print(result)
 #make list containing strings of only 1 and only 0 respectively
 list0 = result.split('1')

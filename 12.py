@@ -9,6 +9,6 @@ for i in range(100):
 #make list containing strings of only 1 and only 0 respectively
 list0 = result.split('1')
 list1 = result.split('0')
-#compare by length and print
+#compare by length and  print
 print('Largest repetition of 0: ' + str( len( max(list0, key=len) )))
 print('Largest repetition of 1: ' + str( len( max(list1, key=len) )))
