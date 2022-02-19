@@ -13,10 +13,6 @@ def placeRandomRing():
         column = random.randrange(3)
         if(not(ring in board[row][column])):
             board[row][column].append(ring)
-            # print(board[0])
-            # print(board[1])
-            # print(board[2])
-            # print('------------')
             return not(checkEnd(ring, row, column))
 
 def checkEnd(ring, row, column):
@@ -52,10 +48,10 @@ def checkEnd(ring, row, column):
     return False
 
 sum = 0
-for i in range(10000):
+for i in range(100):
     newGame()
     while(placeRandomRing()):
         steps += 1
     #print(steps)
     sum += steps + 1
-print(sum/10000)
+print(sum/100)
